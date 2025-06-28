@@ -23,18 +23,15 @@ pip install requests
 # Usage
 1. Clone this repository or download Danbooru-dl.py.
 
-2. Open the script and modify the CONFIG section:
-```
-TAGS = ""      # Replace with desired tags (space-separated)
-SAVE_DIR = ""         # Directory where images will be saved
-USERNAME = ""               # (Optional) Danbooru username
-API_KEY = ""                # (Optional) API key for extended access
-```
-
-3. run the script
+2. Run the script using python
 ```bash
 python downloader.py
 ```
+3. Follow the prompts to enter your config
+
+4. Once all prompts are followed, the script will download imagess following the config
+
+
 
 ## Notes
 Each page fetches up to 200 posts.
@@ -45,7 +42,7 @@ If you include your Danbooru login and API key, you may bypass stricter rate lim
 
 Example Config
 ```
-TAGS = "1girl rating:safe"
+TAGS = "kayoko_(blue_archive) swimsuit"
 SAVE_DIR = "downloads"
 MAX_PAGES = 5
 USERNAME = "your_username"
