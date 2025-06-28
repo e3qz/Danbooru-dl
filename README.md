@@ -21,7 +21,7 @@ pip install requests
 ```
 
 # Usage
-1. Clone this repository or download downloader.py.
+1. Clone this repository or download Danbooru-dl.py.
 
 2. Open the script and modify the CONFIG section:
 ```
