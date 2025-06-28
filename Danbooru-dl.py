@@ -2,7 +2,7 @@ import os
 import requests
 
 # === CONFIG ===
-TAGS = ""  # Replace with your desired tags (space-separated)
+TAGS = ""  # Replace with your desired tags (space-separated). tag limit of 2 if not using username and API key
 SAVE_DIR = "" #input the desired directory for the images to be saved
 LIMIT = 200  # Max per page (Danbooru's limit)
 MAX_PAGES = 15  # Increase if you want more results
