@@ -1,15 +1,14 @@
 import os
 import requests
 
-# === CONFIG ===
-TAGS = ""  # Replace with your desired tags (space-separated). tag limit of 2 if not using username and API key
-SAVE_DIR = "" #input the desired directory for the images to be saved
-LIMIT = 200  # Max per page (Danbooru's limit)
-MAX_PAGES = 15  # Increase if you want more results
+# === GET CONFIG FROM USER ===
+TAGS = input("Enter tag(s) (space-separated, e.g., 'kayoko_(blue_archive) swimsuit'): ").strip()
+SAVE_DIR = input("Enter directory to save images: ").strip()
+LIMIT = int(input("Enter number of posts per page (max 200): ").strip())
+MAX_PAGES = int(input("Enter number of pages to fetch: ").strip())
 
-# Optional: Add your Danbooru login/API key for higher limits
-USERNAME = ""
-API_KEY = ""
+USERNAME = input("Enter your Danbooru username (leave blank if none): ").strip()
+API_KEY = input("Enter your Danbooru API key (leave blank if none): ").strip()
 
 # === SCRIPT ===
 def get_posts(tags, page=1, limit=LIMIT):
@@ -30,7 +29,7 @@ def get_posts(tags, page=1, limit=LIMIT):
 def download_image(post):
     file_url = post.get("file_url")
     if not file_url:
-        print(f"[WARN] No file_url for post {post['id']}, skipping.")
+        print(f"[WARN] No file_url for post {post.get('id', 'unknown')}, skipping.")
         return
 
     filename = f"{post['id']}_{os.path.basename(file_url)}"
