@@ -25,9 +25,6 @@ pip install requests
 
 2. Open the script and modify the CONFIG section:
 ```
-python
-Copy
-Edit
 TAGS = ""      # Replace with desired tags (space-separated)
 SAVE_DIR = ""         # Directory where images will be saved
 USERNAME = ""               # (Optional) Danbooru username
