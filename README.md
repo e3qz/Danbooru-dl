@@ -48,7 +48,7 @@ If you include your Danbooru login and API key, you may bypass stricter rate lim
 
 Example Config
 ```
-TAGS = "2girls rating:safe"
+TAGS = "1girl rating:safe"
 SAVE_DIR = "downloads"
 MAX_PAGES = 5
 USERNAME = "your_username"
