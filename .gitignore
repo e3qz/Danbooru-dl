@@ -1,0 +1,3 @@
+__pycache__/     # Python cache files
+*.pyc            # Compiled Python files
+images/          # Your image save directory (or downloads/)
