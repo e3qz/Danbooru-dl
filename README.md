@@ -1,6 +1,6 @@
 # Danbooru Image Downloader
 
-A simple Python script for downloading images from [Danbooru](https://danbooru.donmai.us) based on tag queries.
+A simple Python script for downloading images from [Danbooru](https://danbooru.donmai.us) based on tag queries using the [Danbooru API](https://danbooru.donmai.us/wiki_pages/help:api).
 
 ## Features
 
